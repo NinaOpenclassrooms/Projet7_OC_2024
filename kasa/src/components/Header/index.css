@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 210px;
+  height: 68px;
+  /* mobile */
+}
+@media only screen and (max-width: 767px) {
+  .header__logo {
+    width: 145px;
+    height: 47px;
+  }
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  /* mobile */
+}
+@media only screen and (max-width: 767px) {
+  .header__nav {
+    width: 140px;
+    height: 17px;
+  }
+}
+.header__link {
+  width: 136px;
+  height: 34px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 24px;
+  /* mobile */
+}
+.header__link:visited {
+  text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+  .header__link {
+    width: 70px;
+    height: 17px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=index.css.map */

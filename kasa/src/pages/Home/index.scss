@@ -1,0 +1,26 @@
+.bannerHome {
+    height: 223px;
+    width: auto;
+    border-radius: 25px;
+    background-color: black;  //A REVOIR
+    opacity: 90%;
+    mix-blend-mode: darken;    //A REVOIR
+    overflow: hidden;
+    &__title {
+        color:white;
+        position: relative;
+        top: 60px;
+        text-align: center;
+        /* mobile */
+        @media only screen and (max-width: 767px) {
+            text-align: left;
+        }
+    }
+    &__img {
+        width : 100%;
+        object-fit: cover;    //A REVOIR
+        position: relative;
+        top: -495px;
+        z-index: -1;
+    }
+}

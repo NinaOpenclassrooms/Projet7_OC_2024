@@ -1,0 +1,29 @@
+.bannerHome {
+  height: 223px;
+  width: auto;
+  border-radius: 25px;
+  background-color: black;
+  opacity: 90%;
+  mix-blend-mode: darken;
+  overflow: hidden;
+}
+.bannerHome__title {
+  color: white;
+  position: relative;
+  top: 60px;
+  text-align: center;
+  /* mobile */
+}
+@media only screen and (max-width: 767px) {
+  .bannerHome__title {
+    text-align: left;
+  }
+}
+.bannerHome__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: -495px;
+  z-index: -1;
+}/*# sourceMappingURL=index.css.map */
