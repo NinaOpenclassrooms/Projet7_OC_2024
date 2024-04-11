@@ -1,9 +1,6 @@
-//Global color variables
-/* General */
-$color-primary: #FF6060;
-$color-secondary: white;
+@import './utils/style/colors.scss';
 
-//Global fonts
+/* Global fonts */
 * {
     font-family: Montserrat;
     font-weight: 500;
@@ -14,5 +11,4 @@ $color-secondary: white;
 }
 h1 {
     font-size: 48px;
-
 }
