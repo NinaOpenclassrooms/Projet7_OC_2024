@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
+import './index.scss'
 
 function Error() {
     return (
-        <div>
-            <h1>404</h1>
-            <h2>Oups! La page que vous demandez n'existe pas.</h2>
-            <Link to="/">Retournez sur la page d'accueil</Link>
+        <div className='error'>
+            <h1 className='error__title'>404</h1>
+            <p className='error__paragraph'>Oups! La page que vous demandez n'existe pas.</p>
+            <span></span>
+            <Link className='error__link'  to="/">Retournez sur la page d'accueil</Link>
         </div>
     )
 }
