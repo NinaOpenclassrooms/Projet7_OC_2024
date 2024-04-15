@@ -2,12 +2,30 @@
 
 .bannerAboutUs {
     height: 223px;
-    width: auto;
+    width: 100%;
     border-radius: 25px;
     overflow: hidden;
-
+    margin: auto;
     /* Mobile */
     @media only screen and (max-width: 767px) {
         height: 111px;    //A MODIFIER
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        top: -495px;
+        z-index: -1;
+    }
+}
+
+.Dropdown {
+    width: 80%;
+    font-size: 24px;
+    margin: auto;
+    margin-top: 50px;
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
+        width: 100%;
     }
 }

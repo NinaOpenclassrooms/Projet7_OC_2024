@@ -1,0 +1,67 @@
+@import '../../utils/style/colors.scss';
+
+.aboutUsCard {
+
+    &__titlecontainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-secondary;
+        background-color: $color-primary;
+        border-radius: 10px;
+        margin: 0px;
+    }
+
+    &__title {
+        color: $color-secondary;
+        margin: 0px;
+        padding-left: 18px;
+        padding-top: 6px;
+        padding-bottom: 10px;
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            font-size: 13px;
+            padding-left: 12px;
+            padding-top: 4px;
+            padding-bottom: 8px;
+        }
+    }
+
+    &__paragraph {
+        position: relative;
+        top: -20px;
+        z-index: -1;
+        background-color: $color-background-light;
+        border-radius: 10px;
+        margin: 0px;
+        padding-left: 18px;
+        padding-top: 45px;
+        padding-bottom: 14px;
+        margin-bottom: 20px;
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.btnarrow {
+    background-color: $color-primary;
+    border: none;
+    height: 32px;
+    width: 32px;
+    margin-right: 30px;
+    cursor: pointer;
+
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
+        height: 18px;
+        width: 18px;
+        margin-right: 10px;
+    }
+}
