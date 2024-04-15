@@ -12,23 +12,22 @@ function Dropdown(props) {
         <div className='aboutUsCard'>
             <div className='aboutUsCard__titlecontainer'>
                 <h2 className='aboutUsCard__title'>{props.title}</h2>
-                <button className='btnarrow btnarrow--up' onclick={() => setIsOpen(false)}>
-                    <img src={arrowdown} className='btnarrow__img--down' />  
+                <button className='btnarrow btnarrow--up' onClick={() => setIsOpen(false)}>
+                    <img src={arrowup} className='btnarrow__img--up'alt="flèche vers le haut" />
                 </button>
             </div>
             <p className="aboutUsCard__paragraph">{props.description}</p>
         </div>
-
     ) : (
         <div className='aboutUsCard'>
             <div className='aboutUsCard__titlecontainer'>
                 <h2 className='aboutUsCard__title'>{props.title}</h2>
-                <button className='btnarrow btnarrow--down' onclick={() => setIsOpen(true)}>
-                    <img src={arrowup} className='btnarrow__img--up' />
+                <button className='btnarrow btnarrow--down' onClick={() => setIsOpen(true)}>
+                    <img src={arrowdown} className='btnarrow__img--down' alt="flèche vers le bas" />  
                 </button>
             </div>
-            <p className="aboutUsCard__paragraph">{props.description}</p>
-        </div>)
+        </div>  
+)
 }
 
 export default Dropdown

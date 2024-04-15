@@ -2,14 +2,7 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/logoKasa.svg'
 import '../../main.scss'
 import './index.scss'
-// import styled from 'styled-components'
 
-// const StyledLink = styled(Link)`
-//     padding: 15px;
-//     color: #FF6060;
-//     text-decoration: none;
-//     font-size: 18px;
-// `
  
 function Header() {
     return (

@@ -5,9 +5,7 @@
     font-family: Montserrat;
     font-weight: 500;
     color: $color-primary;
-    &:visited {
-        text-decoration: none; //NE FONCTIONNE PAS
-    }
+    text-decoration: none;
 }
 h1 {
     font-size: 48px;

@@ -1,0 +1,40 @@
+@import '../../utils/style/colors.scss';
+
+.banner {
+    height: 223px;
+    width: auto;
+    max-width: 1920px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto;
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
+        width: 335px;
+    }
+    &--home {
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            height: 111px;
+        }
+    }
+    &__title {
+        color: $color-secondary;
+        position: relative;
+        top: 60px;
+        text-align: center;
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            font-size: 24px;
+            line-height: 24px;
+            text-align: left;
+        }
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        position: relative; 
+        top: -400px;
+        filter: brightness(70%);
+    }
+}
