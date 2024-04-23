@@ -1,8 +1,21 @@
 @import '../../utils/style/colors.scss';
 
-.aboutUsCard {
-    &__titlecontainer {
-        width: 100%;
+.dropdown {
+    margin: auto;
+
+    &--about {
+        width: 80%;
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    &--accomodation {
+        width: 50%;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    &__titleContainer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -11,6 +24,7 @@
         border-radius: 10px;
         margin: 0px;
     }
+
     &__title {
         color: $color-secondary;
         margin: 0px;
@@ -26,6 +40,7 @@
             padding-bottom: 8px;
         }
     }
+
     &__paragraph {
         position: relative;
         top: -20px;
@@ -57,8 +72,10 @@
     align-items: center;
     margin-right: 30px;
     cursor: pointer;
+
     /* Mobile */
-    @media only screen and (max-width: 767px) {   //MODIFIER TAILLE DES FLECHES
+    @media only screen and (max-width: 767px) {
+        //MODIFIER TAILLE DES FLECHES
         height: 18px;
         width: 18px;
         margin-right: 10px;

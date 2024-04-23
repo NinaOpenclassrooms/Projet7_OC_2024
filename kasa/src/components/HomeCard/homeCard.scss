@@ -5,9 +5,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 50px;
+    gap: 30px;
     border-radius: 25px;
-    padding: 15px;
+    padding: 60px;
     margin-top: 30px;
 }
 
@@ -15,14 +15,16 @@
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    background: linear-gradient(180deg, $color-primary 0%, rgba(0, 0, 0, 0.7) 170%);
-    margin:auto;
+    overflow: hidden;
+    margin: auto;
     position: relative;
+
     /* Mobile */
     @media only screen and (max-width: 767px) {
         width: 335px;
         height: 255px;
     }
+
     &__title {
         height: 52px;
         width: 83%;
@@ -38,5 +40,13 @@
         margin-left: 20px;
         margin-right: 20px;
         padding: 5px;
+        z-index: 2;
+    }
+
+    &__img {
+        object-fit: cover;
+        position: absolute;
+        bottom: -50%;
+        right: -50%;
     }
 }

@@ -1,0 +1,12 @@
+.rating {
+    &__star {
+        height: 100%;
+        width: 100%;
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            height: 18px;
+            width: 18px;
+        }
+    }
+}

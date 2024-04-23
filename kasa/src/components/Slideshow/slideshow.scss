@@ -1,0 +1,32 @@
+.slideshow {
+    &__container {
+        height: 415px;
+        width: 100%;
+        max-width: 1240px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+    }
+
+    &__btn {
+        border: none;
+        background: none;
+        position: absolute;
+        bottom: 130px;
+        cursor: pointer;
+
+        &--forward {
+            right: 0px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0px;
+        object-fit: cover;
+        z-index: -1;
+    }
+}

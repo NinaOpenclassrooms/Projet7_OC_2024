@@ -1,33 +1,39 @@
 .header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 40px;
+
     /* Mobile */
     @media only screen and (max-width: 767px) {
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
     &__logo {
         width: 210px;
         height: 68px;
+
         /* Mobile */
         @media only screen and (max-width: 767px) {
             width: 145px;
             height: 47px;
-            }
+        }
     }
+
     &__nav {
         width: 309px;
         display: flex;
         justify-content: space-between;
+
         /* mobile */
         @media only screen and (max-width: 767px) {
             width: 190px;
             height: 17px;
         }
     }
+
     &__link {
         width: auto;
         display: flex;
@@ -35,9 +41,12 @@
         align-items: center;
         font-size: 24px;
         padding-left: 30px;
-        &:visited {   //NE FONCTIONNE PAS
+
+        &:visited {
+            //NE FONCTIONNE PAS
             text-decoration: none;
         }
+
         /* mobile */
         @media only screen and (max-width: 767px) {
             width: 70px;

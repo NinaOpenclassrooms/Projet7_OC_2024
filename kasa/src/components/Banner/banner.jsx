@@ -1,4 +1,4 @@
-import './index.scss'
+import './banner.scss'
 
 function Banner(props) {
     return (

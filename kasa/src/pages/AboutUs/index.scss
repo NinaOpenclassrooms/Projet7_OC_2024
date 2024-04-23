@@ -9,6 +9,7 @@
     background-image: url('../../assets/background-about-us.webp');
     background-size: cover;
     background-position: center right;
+
     /* Mobile */
     @media only screen and (max-width: 767px) {
         height: 223px;
@@ -16,14 +17,14 @@
 }
 
 .dropdown {
-    width: 80%;
-    font-size: 24px;
-    margin: auto;
-    margin-top: 50px;
-    /* Mobile */
-    @media only screen and (max-width: 767px) {
-        width: 100%;
+    &__container {
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+        }
     }
+
     &__element {
         margin-bottom: 20px;
     }

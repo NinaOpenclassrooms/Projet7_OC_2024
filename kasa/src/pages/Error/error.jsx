@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import './index.scss'
+
+import './error.scss'
 
 function Error() {
     return (
@@ -7,9 +8,9 @@ function Error() {
             <h1 className='error__title'>404</h1>
             <p className='error__paragraph'>Oups! La page que vous demandez n'existe pas.</p>
             <span></span>
-            <Link className='error__link'  to="/">Retournez sur la page d'accueil</Link>
+            <Link className='error__link' to="/">Retournez sur la page d'accueil</Link>
         </div>
     )
 }
- 
+
 export default Error

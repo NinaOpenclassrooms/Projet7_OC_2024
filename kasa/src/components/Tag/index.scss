@@ -1,0 +1,23 @@
+@import '../../utils/style/colors.scss';
+
+.tags {
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__tag {
+        height: 25px;
+        width: 115px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-secondary;
+        background-color: $color-primary;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+}
