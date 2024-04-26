@@ -1,12 +1,19 @@
+import PropTypes from 'prop-types'
+
 import './banner.scss'
 
-function Banner(props) {
+function Banner({ title, img }) {
     return (
-        <div className={`banner banner--${props.page}`} >
-            <h1 className='banner__title'>{props.title}</h1>
-            <img src={props.img} className='banner__img' />
+        <div className='banner banner--small' >
+            <h1 className='banner__title'>{title}</h1>
+            <img src={img} className='banner__img' />
         </div>
     )
+}
+
+Banner.propTypes = {
+    title: PropTypes.string,
+    img: PropTypes.string
 }
 
 export default Banner

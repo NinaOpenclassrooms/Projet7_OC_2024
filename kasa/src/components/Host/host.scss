@@ -1,4 +1,4 @@
-.Host {
+.host {
     &__container {
         height: 60px;
         width: 180px;
@@ -6,6 +6,12 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            height: 33px;
+            width: 135px;
+        }
     }
 
     &__name {
@@ -13,6 +19,12 @@
         width: 93px;
         font-size: 18px;
         text-align: right;
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            height: 33px;
+            font-size: 12px;
+        }
     }
 
     &__img {
@@ -20,5 +32,13 @@
         width: 70px;
         border-radius: 50%;
         overflow: hidden;
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            width: 32px;
+            height: 32px;
+        }
+
+
     }
 }

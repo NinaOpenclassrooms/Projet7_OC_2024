@@ -1,4 +1,5 @@
 import logoFooter from '../../assets/logoKasaFooter.svg'
+
 import './footer.scss'
 
 function Footer() {

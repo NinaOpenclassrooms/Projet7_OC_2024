@@ -9,24 +9,44 @@
         overflow: hidden;
         position: relative;
         margin: auto;
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            height: 255px;
+        }
     }
 
     &__btn {
         border: none;
         background: none;
         position: absolute;
-        bottom: 130px;
+        bottom: 40%;
         cursor: pointer;
 
         &--forward {
             right: 0px;
         }
+
+        &--hidden {
+            visibility: hidden;
+        }
     }
 
+
     &__img {
-        position: absolute;
-        bottom: 0px;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
         z-index: -1;
     }
+}
+
+.slideshow__arrow {
+
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
+        height: 24px;
+        width: 24px;
+    }
+
 }

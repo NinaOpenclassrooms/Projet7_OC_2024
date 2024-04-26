@@ -4,37 +4,46 @@
     height: 223px;
     width: auto;
     max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 25px;
     overflow: hidden;
     margin: auto;
+    position: relative;
+
     /* Mobile */
     @media only screen and (max-width: 767px) {
-        width: 335px;
+        justify-content: flex-start;
     }
-    &--home {
+
+    &--small {
+
         /* Mobile */
         @media only screen and (max-width: 767px) {
             height: 111px;
         }
     }
+
     &__title {
         color: $color-secondary;
-        position: relative;
-        top: 60px;
-        text-align: center;
+        margin: 16px;
+
         /* Mobile */
         @media only screen and (max-width: 767px) {
+            width: 217px;
             font-size: 24px;
-            line-height: 24px;
             text-align: left;
         }
     }
+
     &__img {
+        height: 100%;
         width: 100%;
         object-fit: cover;
         z-index: -1;
-        position: relative; 
-        top: -400px;
+        position: absolute;
+        bottom: 0px;
         filter: brightness(70%);
     }
 }

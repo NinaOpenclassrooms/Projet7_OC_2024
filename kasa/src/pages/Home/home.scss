@@ -1,0 +1,20 @@
+@import '../../utils/style/colors.scss';
+
+.home__cardswrapper {
+    background-color: $color-background-light;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border-radius: 25px;
+    padding: 50px;
+    margin-top: 30px;
+
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
+        background-color: white;
+        gap: 20px;
+        padding: 0px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}

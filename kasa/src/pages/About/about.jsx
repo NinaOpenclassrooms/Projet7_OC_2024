@@ -1,11 +1,12 @@
 import Banner from '../../components/Banner/banner'
 import Dropdown from '../../components/Dropdown/dropdown'
+
 import text from '../../data/aboutTextList.json'
 import backgroundImage from '../../assets/background-about-us.webp'
-import './index.scss'
 
+import './about.scss'
 
-function AboutUs() {
+function About() {
   return (
     <div>
       <Banner title="" img={backgroundImage} page="about" />
@@ -20,4 +21,4 @@ function AboutUs() {
   )
 }
 
-export default AboutUs
+export default About

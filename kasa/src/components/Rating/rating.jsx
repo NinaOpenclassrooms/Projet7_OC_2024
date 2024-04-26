@@ -1,9 +1,12 @@
+import PropTypes from 'prop-types'
+
 import starFilled from '../../assets/star-filled.svg'
 import starUnfilled from '../../assets/star-unfilled.svg'
 
+import './rating.scss'
 
-function Rating(props) {
-    const scaleValue=props.scaleValue
+function Rating({ rating }) {
+    const scaleValue = { rating }
     const range = [1, 2, 3, 4, 5]
     return (
         <div className="rating__container">
@@ -12,6 +15,10 @@ function Rating(props) {
             )}
         </div>
     )
+}
+
+Rating.propTypes = {
+    rating: PropTypes.string
 }
 
 export default Rating
