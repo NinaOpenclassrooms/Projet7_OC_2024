@@ -1,4 +1,9 @@
+@import '../../utils/style/colors.scss';
+
 .slideshow {
+    height: 100%;
+    width: 100%;
+
     &__container {
         height: 415px;
         width: 100%;
@@ -17,10 +22,13 @@
     }
 
     &__btn {
+        height: 100%;
+        display: flex;
+        align-items: center;
         border: none;
         background: none;
         position: absolute;
-        bottom: 40%;
+        top: 0px;
         cursor: pointer;
 
         &--forward {
@@ -28,7 +36,7 @@
         }
 
         &--hidden {
-            visibility: hidden;
+            display: none;
         }
     }
 
@@ -39,14 +47,31 @@
         object-fit: cover;
         z-index: -1;
     }
+
+    &__index {
+        color: $color-secondary;
+        position: absolute;
+        bottom: 20px;
+        right: 50%;
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            visibility: hidden;
+        }
+    }
 }
 
 .slideshow__arrow {
+
+    /* Tablet */
+    @media only screen and (max-width: 1023px) {
+        height: 48px;
+        width: 48px;
+    }
 
     /* Mobile */
     @media only screen and (max-width: 767px) {
         height: 24px;
         width: 24px;
     }
-
 }

@@ -4,31 +4,22 @@ import PropTypes from 'prop-types'
 import arrowup from '../../assets/arrow_up.svg'
 import arrowdown from '../../assets/arrow_down.svg'
 
-import './dropdown.scss'
+import './Dropdown.scss'
 
-//PAGE DANS Les PROPS A RETIRER
-
-function Dropdown({ page, title, description }) {
+function Dropdown({ title, description }) {
     const [isOpen, setIsOpen] = useState(false)
 
-    return isOpen ? (
-        <div className={`dropdown dropdown--${page}`}>
+    return (
+        <div className='dropdown' key={title}>
             <div className='dropdown__titleContainer'>
                 <h2 className='dropdown__title'>{title}</h2>
-                <button className='btnarrow btnarrow--up' onClick={() => setIsOpen(false)}>
-                    <img src={arrowup} className='btnarrow__img--up' alt="flèche vers le haut" />
+                <button className={isOpen ? 'btnarrow btnarrow--up' : 'btnarrow btnarrow--down'} onClick={() => setIsOpen(!isOpen)}>
+                    <img src={isOpen == true ? arrowup : arrowdown} className='btnarrow__img' alt="flèche" />
                 </button>
             </div>
-            <p className="dropdown__paragraph">{description}</p>
-        </div>
-    ) : (
-        <div className={`dropdown dropdown--${page}`}>
-            <div className='dropdown__titleContainer'>
-                <h2 className='dropdown__title'>{title}</h2>
-                <button className='btnarrow btnarrow--down' onClick={() => setIsOpen(true)}>
-                    <img src={arrowdown} className='btnarrow__img--down' alt="flèche vers le bas" />
-                </button>
-            </div>
+            {isOpen == true ? <div className="dropdown__paragraph">
+                {Array.isArray(description) == true ? <ul>{description.map((description) => (<li>{description}</li>))}</ul> : <p>{description}</p>}
+            </div > : null}
         </div>
     )
 }

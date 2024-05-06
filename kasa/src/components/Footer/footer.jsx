@@ -1,6 +1,6 @@
 import logoFooter from '../../assets/logoKasaFooter.svg'
 
-import './footer.scss'
+import './Footer.scss'
 
 function Footer() {
     return (

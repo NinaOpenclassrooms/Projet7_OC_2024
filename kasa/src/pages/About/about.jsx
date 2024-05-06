@@ -1,19 +1,21 @@
-import Banner from '../../components/Banner/banner'
-import Dropdown from '../../components/Dropdown/dropdown'
+import Banner from '../../components/Banner/Banner'
+import Dropdown from '../../components/Dropdown/Dropdown'
 
 import text from '../../data/aboutTextList.json'
 import backgroundImage from '../../assets/background-about-us.webp'
 
-import './about.scss'
+import './About.scss'
 
 function About() {
   return (
     <div>
-      <Banner title="" img={backgroundImage} page="about" />
+      <div className='banner__container banner__container--tall'>
+        <Banner title="" img={backgroundImage} />
+      </div>
       <section className='dropdown__container'>
         {text.map((text) => (
           <div className='dropdown__element' key={text.id}>
-            <Dropdown title={text.title} description={text.description} page="about" />
+            <Dropdown title={text.title} description={text.description} />
           </div>
         ))}
       </section>

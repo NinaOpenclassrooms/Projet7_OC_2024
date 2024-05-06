@@ -1,14 +1,6 @@
 @import '../../utils/style/colors.scss';
 
-.bannerAboutUs {
-    height: 223px;
-    width: 100%;
-    border-radius: 25px;
-    overflow: hidden;
-    margin: auto;
-    background-image: url('../../assets/background-about-us.webp');
-    background-size: cover;
-    background-position: center right;
+.banner__container--tall {
 
     /* Mobile */
     @media only screen and (max-width: 767px) {
@@ -18,6 +10,8 @@
 
 .dropdown {
     &__container {
+        width: 80%;
+        margin: auto;
 
         /* Mobile */
         @media only screen and (max-width: 767px) {

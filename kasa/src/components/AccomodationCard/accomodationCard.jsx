@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-import './accomodationCard.scss'
+import './AccomodationCard.scss'
 
 function AccomodationCard({ id, title, cover }) {
     return (

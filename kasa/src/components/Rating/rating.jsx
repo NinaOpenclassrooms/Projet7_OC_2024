@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import starFilled from '../../assets/star-filled.svg'
 import starUnfilled from '../../assets/star-unfilled.svg'
 
-import './rating.scss'
+import './Rating.scss'
 
 function Rating({ rating }) {
-    const scaleValue = { rating }
+    const scaleValue = rating
     const range = [1, 2, 3, 4, 5]
     return (
         <div className="rating__container">

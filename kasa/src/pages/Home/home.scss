@@ -1,5 +1,19 @@
 @import '../../utils/style/colors.scss';
 
+.banner__container {
+    width: 100%;
+    display: flex;
+    margin: auto;
+
+    &--short {
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            height: 111px;
+        }
+    }
+}
+
 .home__cardswrapper {
     background-color: $color-background-light;
     display: flex;

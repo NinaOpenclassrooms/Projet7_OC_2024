@@ -1,15 +1,15 @@
 import { useParams } from 'react-router-dom'
 
-import Error from '../../pages/Error/error'
-import Slideshow from '../../components/Slideshow/slideshow'
+import Error from '../Error/Error'
+import Slideshow from '../../components/Slideshow/Slideshow'
 import Tag from '../../components/Tag/tag'
-import Host from '../../components/Host/host'
-import Rating from '../../components/Rating/rating'
-import Dropdown from '../../components/Dropdown/dropdown'
+import Host from '../../components/Host/Host'
+import Rating from '../../components/Rating/Rating'
+import Dropdown from '../../components/Dropdown/Dropdown'
 
 import accomodations from '../../data/accomodationList.json'
 
-import './accomodation.scss'
+import './Accomodation.scss'
 
 function Accomodation() {
     const { id } = useParams();
@@ -24,7 +24,7 @@ function Accomodation() {
 
     return (
         <div className='accomodation__container'>
-            <Slideshow pictures={accomodationsData.pictures} />
+            <Slideshow title={accomodationsData.title} pictures={accomodationsData.pictures} />
             <div className='accomodation'>
                 <div className='accomodation__informationsContainer'>
                     <div className='accomodation__titleContainer'>
@@ -38,8 +38,8 @@ function Accomodation() {
                     </aside>
                 </div>
                 <div className='accomodation__description'>
-                    <Dropdown title="Description" description={accomodationsData.description} page="accomodation" />
-                    <Dropdown title="Équipements" description={accomodationsData.equipments} page="accomodation" />
+                    <Dropdown title="Description" description={accomodationsData.description} />
+                    <Dropdown title="Équipements" description={accomodationsData.equipments} />
                 </div>
             </div>
         </div>

@@ -2,27 +2,19 @@
 
 .banner {
     height: 223px;
-    width: auto;
+    width: 100%;
     max-width: 1920px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     overflow: hidden;
-    margin: auto;
     position: relative;
 
     /* Mobile */
     @media only screen and (max-width: 767px) {
+        height: 100%;
         justify-content: flex-start;
-    }
-
-    &--small {
-
-        /* Mobile */
-        @media only screen and (max-width: 767px) {
-            height: 111px;
-        }
     }
 
     &__title {

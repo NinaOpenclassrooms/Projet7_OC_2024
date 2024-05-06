@@ -1,24 +1,13 @@
 @import '../../utils/style/colors.scss';
 
 .dropdown {
-    margin: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
-    &--about {
-        width: 80%;
-        font-size: 24px;
-        margin-top: 50px;
-
-        /* Mobile */
-        @media only screen and (max-width: 767px) {
-            width: 100%;
-            margin-top: 20px;
-        }
-    }
-
-    &--accomodation {
+    /* Mobile */
+    @media only screen and (max-width: 767px) {
         width: 100%;
-        font-size: 18px;
-        margin-top: 10px;
     }
 
     &__titleContainer {
@@ -27,6 +16,7 @@
         align-items: center;
         color: $color-secondary;
         background-color: $color-primary;
+        overflow: hidden;
         border-radius: 10px;
         margin: 0px;
     }
@@ -57,15 +47,21 @@
         padding-left: 18px;
         padding-top: 45px;
         padding-bottom: 14px;
-        margin-bottom: 20px;
 
         /* Mobile */
         @media only screen and (max-width: 767px) {
             font-size: 12px;
             font-weight: 400;
-            margin-bottom: 5px;
-            padding-top: 35px;
             padding-right: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0px;
+
+            li {
+                margin-bottom: 5px;
+            }
         }
     }
 }
@@ -83,9 +79,15 @@
 
     /* Mobile */
     @media only screen and (max-width: 767px) {
-        //MODIFIER TAILLE DES FLECHES
-        height: 18px;
-        width: 18px;
-        margin-right: 10px;
+        margin-right: 0px;
+    }
+
+    &__img {
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            height: 18px;
+            width: 18px;
+        }
     }
 }
