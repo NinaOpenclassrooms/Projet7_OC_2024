@@ -18,7 +18,11 @@ function Dropdown({ title, description }) {
                 </button>
             </div>
             {isOpen == true ? <div className="dropdown__paragraph">
-                {Array.isArray(description) == true ? <ul>{description.map((description) => (<li>{description}</li>))}</ul> : <p>{description}</p>}
+                {Array.isArray(description) == true ?
+                    <ul>{description.map((descriptionElement) => (<li key={description.indexOf(descriptionElement)}>{descriptionElement}</li>))}</ul> :
+                    <p>{description}</p>
+                }
+
             </div > : null}
         </div>
     )

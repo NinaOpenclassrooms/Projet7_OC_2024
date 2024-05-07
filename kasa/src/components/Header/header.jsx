@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom'
 
 import logo from '../../assets/logoKasa.svg'
 
-import '../../main.scss'
 import './Header.scss'
 
 function Header() {

@@ -14,7 +14,7 @@ import './main.scss'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
-      <div className='globalcontainer'>
+      <div className='globalContainer'>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

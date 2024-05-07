@@ -10,11 +10,11 @@ function Home() {
   return (
     <div>
       <div className='banner__container banner__container--short' >
-        <Banner title="Chez vous, partout et ailleurs" img={backgroundImage} page="home" />
+        <Banner title="Chez vous, partout et ailleurs" img={backgroundImage} />
       </div>
       <section className='home__cardswrapper'>
         {accomodations.map((accomodations) => (
-          <AccomodationCard id={accomodations.id} title={accomodations.title} cover={accomodations.cover} />
+          <AccomodationCard id={accomodations.id} title={accomodations.title} cover={accomodations.cover} key={accomodations.id} />
         ))}
       </section>
     </div>

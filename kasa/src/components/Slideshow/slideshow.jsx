@@ -17,7 +17,7 @@ function Slideshow({ title, pictures }) {
                 <button className={length > 1 ? 'slideshow__btn slideshow__btn--back' : 'slideshow__btn--hidden'} >
                     <img src={arrowBack} className='slideshow__arrow slideshow__arrow--back' alt="flèche de retour à la photo précédente" onClick={() => setCurrent(current - 1 >= 0 ? current - 1 : length - 1)} />
                 </button>
-                <img src={pictures[current]} className='slideshow__img' alt={`${title}-${current + 1}`} key={pictures.toString()} />
+                <img src={pictures[current]} className='slideshow__img' alt={`${title}-${current + 1}`} />
                 <span className='slideshow__index'>{current + 1}/{length}</span>
                 <button className={length > 1 ? 'slideshow__btn slideshow__btn--forward' : 'slideshow__btn--hidden'} >
                     <img src={arrowForward} className='slideshow__arrow slideshow__arrow--forward' alt="flèche de passage à la photo suivante" onClick={() => setCurrent(current + 1 <= length - 1 ? (current + 1) : 0)} />

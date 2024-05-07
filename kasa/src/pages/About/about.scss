@@ -10,16 +10,13 @@
 
 .dropdown {
     &__container {
-        width: 80%;
-        margin: auto;
+        width: 82%;
+        margin: 31px auto 150px auto;
 
         /* Mobile */
         @media only screen and (max-width: 767px) {
             width: 100%;
+            margin: 20px auto 140px auto;
         }
-    }
-
-    &__element {
-        margin-bottom: 2%;
     }
 }

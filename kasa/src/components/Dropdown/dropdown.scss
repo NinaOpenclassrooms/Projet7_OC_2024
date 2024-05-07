@@ -2,62 +2,59 @@
 
 .dropdown {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-    /* Mobile */
-    @media only screen and (max-width: 767px) {
-        width: 100%;
-    }
 
     &__titleContainer {
+        height: 47px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: $color-secondary;
         background-color: $color-primary;
-        overflow: hidden;
         border-radius: 10px;
-        margin: 0px;
+        overflow: hidden;
+        margin-bottom: 31px;
+
+        /* Mobile */
+        @media only screen and (max-width: 767px) {
+            height: 30px;
+            margin-bottom: 20px;
+        }
     }
 
     &__title {
         color: $color-secondary;
         margin: 0px;
         padding-left: 18px;
-        padding-top: 6px;
-        padding-bottom: 10px;
 
         /* Mobile */
         @media only screen and (max-width: 767px) {
             font-size: 13px;
             padding-left: 12px;
-            padding-top: 4px;
-            padding-bottom: 8px;
         }
     }
 
     &__paragraph {
         position: relative;
-        top: -20px;
+        top: -45px;
         z-index: -1;
+        font-size: 24px;
         background-color: $color-background-light;
         border-radius: 10px;
-        margin: 0px;
-        padding-left: 18px;
-        padding-top: 45px;
-        padding-bottom: 14px;
 
         /* Mobile */
         @media only screen and (max-width: 767px) {
             font-size: 12px;
             font-weight: 400;
             padding-right: 5px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            padding: 40px 18px 10px 18px;
         }
 
         ul {
             list-style-type: none;
-            padding-left: 0px;
+            padding: 40px 18px 10px 18px;
 
             li {
                 margin-bottom: 5px;

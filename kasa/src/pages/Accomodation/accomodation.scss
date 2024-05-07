@@ -22,10 +22,12 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 20px;
+        padding-bottom: 20px;
 
         /* Mobile */
         @media only screen and (max-width: 767px) {
             flex-direction: column;
+            padding-bottom: 10px;
         }
     }
 
@@ -67,7 +69,7 @@
 
         /* Mobile */
         @media only screen and (max-width: 767px) {
-            width: 100%;
+            width: 98%;
             flex-direction: row-reverse;
             align-items: center;
         }
