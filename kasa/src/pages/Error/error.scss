@@ -1,9 +1,11 @@
 .error {
     margin-bottom: 160px;
+
     /* Mobile */
     @media only screen and (max-width: 767px) {
         margin-bottom: 200px;
     }
+
     &__title {
         width: 100%;
         display: flex;
@@ -13,12 +15,14 @@
         font-weight: 700;
         margin-top: 169px;
         margin-bottom: 0px;
+
         /* Mobile */
         @media only screen and (max-width: 767px) {
-        font-size: 96px;
+            font-size: 96px;
         }
 
     }
+
     &__paragraph {
         height: 51px;
         width: 70%;
@@ -27,16 +31,16 @@
         align-items: center;
         text-align: center;
         font-size: 36px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 66px;
+        margin: 66px auto 0px auto;
+
         /* Mobile */
         @media only screen and (max-width: 767px) {
-        font-size: 18px;
-        font-weight: 500;
-        margin-top: 0px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 0px;
         }
     }
+
     &__link {
         height: 26px;
         width: 100%;
@@ -45,6 +49,8 @@
         align-items: center;
         font-size: 18px;
         margin-top: 182px;
+        text-decoration: underline;
+
         /* Mobile */
         @media only screen and (max-width: 767px) {
             font-size: 14px;
