@@ -1,5 +1,4 @@
 .accomodation {
-    max-width: 1240px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,10 +23,11 @@
         padding-top: 20px;
         padding-bottom: 20px;
 
+
         /* Mobile */
         @media only screen and (max-width: 767px) {
             flex-direction: column;
-            padding-bottom: 10px;
+            padding-bottom: 0px;
         }
     }
 
@@ -85,6 +85,7 @@
         /* Mobile */
         @media only screen and (max-width: 767px) {
             flex-direction: column;
+            gap: 0px;
         }
     }
 }

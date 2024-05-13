@@ -31,6 +31,7 @@ function Slideshow({ title, pictures }) {
 }
 
 Slideshow.propTypes = {
+    title: PropTypes.string,
     pictures: PropTypes.arrayOf(PropTypes.string)
 }
 
