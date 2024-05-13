@@ -11,7 +11,9 @@ function Header() {
 
     return (
         <div className="header">
-            <img src={logo} alt='Logo de Kasa' className='header__logo' />
+            <Link className='header__link--logo' to="/">
+                <img src={logo} alt='Logo de Kasa' className='header__logo' />
+            </Link>
             <nav className='header__nav'>
                 <Link className={pathname == "/" ? 'header__link header__link--underlined' : 'header__link'} to="/">Accueil</Link>
                 <Link className={pathname == "/aboutUs" ? 'header__link header__link--underlined' : 'header__link'} to="/aboutUs">A propos</Link>
