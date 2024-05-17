@@ -7,8 +7,10 @@ function AccomodationCard({ id, title, cover }) {
     return (
         <div className='accomodationCard'>
             <Link className='accomodationCard__link' to={`/accomodation/${id}`}>
-                <h2 className="accomodationCard__title">{title}</h2>
-                <img className='accomodationCard__img' src={cover} alt={title} />
+                <div className='accomodationCard__gradient'>
+                    <h2 className="accomodationCard__title">{title}</h2>
+                    <img className='accomodationCard__img' src={cover} alt={title} />
+                </div>
             </Link>
         </div>
     )

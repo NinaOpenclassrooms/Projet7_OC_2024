@@ -23,9 +23,19 @@
         height: 230px;
     }
 
+    &__gradient {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        position: relative;
+        bottom: 0px;
+        z-index: +1;
+    }
+
     &__title {
         height: 52px;
-        width: 80%;
+        width: 88%;
         color: $color-secondary;
         font-size: 18px;
         position: absolute;
@@ -39,5 +49,6 @@
         width: 100%;
         object-fit: cover;
         z-index: -1;
+        opacity: 0.5;
     }
 }
