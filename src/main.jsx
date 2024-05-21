@@ -13,7 +13,7 @@ import './main.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/Projet7_OC_2024">
       <div className='globalContainer'>
         <Header />
         <Routes>
