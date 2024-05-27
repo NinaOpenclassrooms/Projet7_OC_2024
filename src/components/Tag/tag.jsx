@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import './Tag.scss'
+import './tag.scss'
 function Tag({ tags }) {
 
     return (

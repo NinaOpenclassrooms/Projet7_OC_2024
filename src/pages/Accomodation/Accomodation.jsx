@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 
 import Error from '../Error/Error'
 import Slideshow from '../../components/Slideshow/Slideshow'
-import Tag from '../../components/Tag/Tag'
+import Tag from '../../components/Tag/tag'
 import Host from '../../components/Host/Host'
 import Rating from '../../components/Rating/Rating'
 import Dropdown from '../../components/Dropdown/Dropdown'
