@@ -17,7 +17,7 @@ function Dropdown({ title, description }) {
                     <img src={isOpen == true ? arrowup : arrowdown} className='btnarrow__img' alt="flèche" />
                 </button>
             </div>
-            {isOpen == true ? <div className="dropdown__paragraph">
+            {isOpen == true ? <div className='dropdown__paragraph'>
                 {Array.isArray(description) == true ?
                     <ul>{description.map((descriptionElement) => (<li key={description.indexOf(descriptionElement)}>{descriptionElement}</li>))}</ul> :
                     <p>{description}</p>

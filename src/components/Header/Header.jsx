@@ -10,7 +10,7 @@ function Header() {
     const { pathname } = useLocation();
 
     return (
-        <div className="header">
+        <div className='header'>
             <Link className='header__link--logo' to="/">
                 <img src={logo} alt='Logo de Kasa' className='header__logo' />
             </Link>

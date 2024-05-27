@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types'
 
-import './tag.scss'
+import './Tag.scss'
 function Tag({ tags }) {
 
     return (
-        <div className="tags__container">
+        <div className='tags__container'>
             {tags.map(tag => (
-                <div className="tags__tag" key={tag}>
+                <div className='tags__tag' key={tag}>
                     {tag}
                 </div>
             ))}
