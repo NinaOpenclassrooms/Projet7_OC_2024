@@ -11,6 +11,7 @@ function Slideshow({ title, pictures }) {
     const [current, setCurrent] = useState(0)
     const length = pictures.length
 
+    //Arrows and picture index are only present if the picture number is over 1
     return (
         <section className='slideshow__container'>
             <div className='slideshow'>
